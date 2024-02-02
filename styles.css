@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  background-color: #fff;
+}
+.nav {
+  height: fit-content;
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+img {
+  width: 100%;
+}
+
+.container-logo {
+  width: 100%;
+  flex: 1;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 25%;
+}
+.bi-whatsapp,
+.bi-instagram {
+  font-size: 25px;
+  margin-left: 5px;
+}
+.tabs ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  flex: 1;
+  border: 1px solid blue;
+}
+
+.user {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.user a {
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  color: #000;
+}
+.tabs li {
+  padding: 10px;
+  margin-left: 9px;
+}
+
+.bi-cart2 {
+  font-size: 20px;
+}
+
+.container-slider {
+  margin-top: 10rem;
+}
+
+.slide img {
+  width: 1600px;
+  height: 100%;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 560px;
+}
+.image-box {
+  display: flex;
+  position: absolute;
+  animation: carousel 15s alternate infinite;
+}
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  24% {
+    left: -1600px;
+  }
+  50% {
+    left: -1600px;
+  }
+  54% {
+    left: calc(-1600 * 2px);
+  }
+  80% {
+    left: calc(-1600 * 2px);
+  }
+  84% {
+    left: calc(-1600 * 2px);
+  }
+  100% {
+    left: calc(-1600 * 3px);
+  }
+}
+
+
+
+
+
+
+
+
+main {
+    padding: 1rem;
+}
+
+.container-categories-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-categories-two {
+    display: flex;
+    justify-content: space-between;
+}
