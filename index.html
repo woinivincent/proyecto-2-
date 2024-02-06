@@ -1,121 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panificados Patagonia</title>
-    <link rel="icon" href="./images/PANIFICADOS INTEGRALES.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="nav">
-        <div class="social-icons">
-          <i class="bi bi-whatsapp"></i><i class="bi bi-instagram"></i>
-        </div>
-        <div class="container-logo">
-          <div class="logo">
-            <img src="./images/PANIFICADOS INTEGRALES.png" alt="Logo" />
-          </div>
-        </div>
-        <div class="user">
-          <a href="#">Crear cuenta</a>
-          <a href="#">Iniciar sesión</a>
-          <i class="bi bi-cart2"></i>
-        </div>
-      </div>
-      <div class="tabs">
-        <ul>
-          <li>Inicio</li>
-          <li>Productos</li>
-          <li>Contacto</li>
-          <li>Nosotros</li>
-        </ul>
-      </div>
-    </header>
-    <section class="container-slider">
-      <div class="slider">
-        <div class="image-box">
-          <div class="slide">
-            <img src="./images/9a63a850-219e-495c-83b1-0d7362ec1cbd_fs2.jpg" alt="slide1 " />
-          </div>
-          <div class="slide">
-            <img src="./images/63f7db8da8ea1.image.jpg" alt="slide2" />
-          </div>
-          <div class="slide">
-            <img src="./images/Vegan-Oatmeal-Raisin-Cookies-Square-2.jpg" alt="slide3" />
-          </div>
-          <div class="slide">
-            <img src="./images/integral-2d3fer07vvm0.jpg" alt="slide4" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <main>
-      <div class="container-categories-one">
-        <div class="container-img">
-          <img src="./images/63f7db8da8ea1.image.jpg" alt="" />
-          <span>Panes</span>
-        </div>
-        <div class="container-img">
-          <img src="./images/8bcdfa2ae6b6a7aeeca975c6de35ef41.jpg" alt="" />
-          <span>Salados</span>
-        </div>
-      </div>
-      <div class="container-categories-two">
-        <div class="container-img">
-          <img src="./images/Whole-Wheat-all-butter-pie-crust_hero_for-web-e1654532884176.jpg" alt="" />
-          <span>Pre-cocidos</span>
-        </div>
-        <div class="container-img">
-          <img src="./images/images (2).jpeg" alt="" />
-          <span>Dulces</span>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div>
-        <div>
-          <h2>NAVEGACIÓN</h2>
-          <ul>
-            <li>Inicio</li>
-            <li>Productos</li>
-            <li>Contacto</li>
-            <li>Nosotros</li>
-          </ul>
-        </div>
-        <div>
-          <h2>CONTACTANOS</h2>
-          <div>
-            <span>@</span>
-            <p>hola@clarargentina.com.ar</p>
-          </div>
-        </div>
-        <div>
-          <h2>REDES SOCIALES</h2>
-          <i class="bi bi-instagram"></i>
-        </div>
-        <div>
-          <h2>NEWSLETTER</h2>
-          <form>
-            <input type="text" placeholder="Email" />
-            <div>
-              <i class="bi bi-send-fill"></i>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Panificados Patagonia</title>
+        <link rel="icon" href="./img/PANIFICADOS INTEGRALES.png" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="container-icon-list">
+                    <i class="icon-list bi bi-list"></i>
+                </div>
+                <div class="social-icons">
+                    <i class="bi bi-whatsapp"></i>
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <div class="container-logo">
+                    <!-- <img class="logo" src="./images/PANIFICADOS INTEGRALES.png" alt="Logo" /> -->
+                    <img class="logo"
+                        src="data:image/jpeg;base64,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"
+                        alt="Logo" />
+                </div>
+                <div class="user">
+                    <div class="user-container-register">
+                        <a class="user-account" href="#">CREAR CUENTA</a>
+                        <a class="user-sesion" href="#">INICIAR SESIÓN</a>
+                    </div>
+                    <div class="user-container-cart">
+                        <i class="user-cart bi bi-cart2"></i>
+                        <div class="container-count">
+                            <span class="user-count">37</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="tabs">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li>Contacto</li>
+                    <li>Nosotros</li>
+                </ul>
             </div>
-          </form>
-        </div>
-      </div>
-      <div>
-        <p>COPYRIGHT LA ARGENTINA - 2024. TODOS LOS DERECHOS RESERVADOS.</p>
-        <p>DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS</p>
-        <a href="#">INGRESÁ ACÁ</a>
-        <a href="#">BOTÓN DE ARREPENTIMIENTO</a>
-      </div>
-    </footer>
-  </body>
+        </header>
+        <main class="main">
+            <section class="container-slider">
+                <div class="slider">
+                    <img src="./img/1-slide.png" alt="slide1 " />
+                    <img src="./img/2-slide.png" alt="slide2" />
+                    <img src="./img/3-slide.png" alt="slide3" />
+                </div>
+            </section>
+            <section class="container-info">
+                <h2 class="info-title">¡RECORDÁ QUE TU COMPRA VA A ESTAR
+                    DISPONIBLE A PARTIR DE MAÑANA!</h2>
+                <p class="info-body">Si necesitás tu pedido para hoy podés
+                    comunicarte al 387 589 213 para chequear disponibilidad</p>
+            </section>
+            <section class="container-categories-one">
+                <div class="container-img-one">
+                    <img class="categories-one-img" src="./img/img-3.png"
+                        alt="img-3.png" />
+                    <h3 class="categories-one-title">Panes</h3>
+                </div>
+                <div class="container-img-one">
+                    <img class="categories-one-img" src="./img/img-5.png"
+                        alt="img-5.png" />
+                    <h3 class="categories-one-title">Tortas</h3>
+                </div>
+                <div class="container-img-one">
+                    <img class="categories-one-img" src="./img/img-1.png"
+                        alt="img-4.png" />
+                    <h3 class="categories-one-title">Salados</h3>
+                </div>
+            </section>
+            <section class="container-categories-two">
+                <div class="container-img-two">
+                    <img class="categories-two-img" src="./img/img-4.png"
+                        alt="img-4.png" />
+                    <h3 class="categories-two-title">Pre-cocidos</h3>
+                </div>
+                <div class="container-img-two">
+                    <img class="categories-two-img" src="./img/img-7.png"
+                        alt="img-7.png" />
+                    <h3 class="categories-two-title">Dulces</h3>
+                </div>
+            </section>
+            <section class="container-home">
+                <div class="container-home-img">
+                    <img class="home-img" src="./img/img-8.png" alt="img-8.png">
+                </div>
+                <div class="container-home-text">
+                    <h2 class="home-title">PANIFICADOS PATAGONIA</h2>
+                    <p class="home-paragraph">Más de 100 años horneando para
+                        nuestros vecinos en nuestras 9 sucursales.</p>
+                    <a class="home-link" href="#">CONOCENOS</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h2 class="footer-title">NAVEGACIÓN</h2>
+                    <ul class="footer-nav-list">
+                        <li class="footer-item"><a class="footer-item-link"
+                                href="#">Inicio</a></li>
+                        <li class="footer-item"><a class="footer-item-link"
+                                href="#">Productos</a></li>
+                        <li class="footer-item"><a class="footer-item-link"
+                                href="#">Contacto</a></li>
+                        <li class="footer-item"><a class="footer-item-link"
+                                href="#">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h2 class="footer-title">CONTACTANOS</h2>
+                    <div class="footer-account">
+                        <span class="footer-letter">@</span>
+                        <a href="#"
+                            class="footer-email">panificadospatagonia@gmail.com.ar</a>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <h2 class="footer-title">REDES SOCIALES</h2>
+                    <a href="#" class="footer-container-icon-social">
+                        <i class="footer-icon-social bi bi-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer-container-form">
+                    <h2 class="footer-title">NEWSLETTER</h2>
+                    <form class="footer-form">
+                        <input class="footer-input" type="text"
+                            placeholder="Email" />
+                        <button type="submit" class="footer-container-icon">
+                            <i class="footer-icon bi bi-send-fill"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="copy-right">
+                <p class="copy-right-text-1">COPYRIGHT PANIFICADOS PATAGONIA -
+                    2024. TODOS LOS DERECHOS RESERVADOS.</p>
+                <div class="copy-right-container-text-2">
+                    <p class="copy-right-text-2">DEFENSA DE LAS Y LOS
+                        CONSUMIDORES.
+                        PARA RECLAMOS</p>
+                    <a class="copy-right-link" href="#">INGRESÁ ACÁ</a>
+                </div>
+                <a class="copy-right-link" href="#">BOTÓN DE ARREPENTIMIENTO</a>
+            </div>
+        </footer>
+    </body>
 </html>
