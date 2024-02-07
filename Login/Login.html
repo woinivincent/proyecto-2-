@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Panificados Patagonia</title>
-        <link rel="icon" href="./images/PANIFICADOS INTEGRALES.png" />
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patagonia - Iniciar Sesión</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="icon" href="./imagenes/amazon-icon.webp">
     </head>
     <body>
         <header class="header">
@@ -20,14 +19,15 @@
                     <i class="bi bi-instagram"></i>
                 </div>
                 <div class="container-logo">
-                    <img class="logo"
-                        src="./images/PANIFICADOS INTEGRALES.png"
+                    <img class="logo" src="../images/PANIFICADOS INTEGRALES.png"
                         alt="Logo" />
                 </div>
                 <div class="user">
                     <div class="user-container-register">
-                        <a class="user-account" href="/Register/Register.html">CREAR CUENTA</a>
-                        <a class="user-sesion" href="/Login/Login.html">INICIAR SESIÓN</a>
+                        <a class="user-account" href="/Register/Register.html">CREAR
+                            CUENTA</a>
+                        <a class="user-sesion"
+                            href="/Login/Login.html">INICIAR SESIÓN</a>
                     </div>
                     <div class="user-container-cart">
                         <i class="user-cart bi bi-cart2"></i>
@@ -39,67 +39,38 @@
             </nav>
             <div class="tabs">
                 <ul class="tabs-list">
-                    <li class="tabs-list-item"><a class="tabs-item-link" href="#">INICIO</a></li>
-                    <li class="tabs-list-item"><a class="tabs-item-link" href="#">PRODUCTOS</a></li>
-                    <li class="tabs-list-item"><a class="tabs-item-link" href="#">CONTACTO</a></li>
-                    <li class="tabs-list-item"><a class="tabs-item-link" href="#">NOSOTROS</a></li>
+                    <li class="tabs-list-item"><a class="tabs-item-link"
+                            href="/index.html">INICIO</a></li>
+                    <li class="tabs-list-item"><a class="tabs-item-link"
+                            href="#">PRODUCTOS</a></li>
+                    <li class="tabs-list-item"><a class="tabs-item-link"
+                            href="#">CONTACTO</a></li>
+                    <li class="tabs-list-item"><a class="tabs-item-link"
+                            href="#">NOSOTROS</a></li>
                 </ul>
             </div>
         </header>
+
         <main class="main">
-            <section class="container-slider">
-                <div class="slider">
-                    <img src="./img/1-slide.png" alt="slide1 " />
-                    <img src="./img/2-slide.png" alt="slide2" />
-                    <img src="./img/3-slide.png" alt="slide3" />
+           
+            <form class="form">
+              
+                <div class="form-container">
+                    <label class="form-label" for="mobile-email">EMAIL</label>
+                    <input class="form-input-name" id="mobile-email" type="email" placeholder="ej.: tunombre@email.com" autocomplete="off">
                 </div>
-            </section>
-            <section class="container-info">
-                <h2 class="info-title">¡RECORDÁ QUE TU COMPRA VA A ESTAR
-                    DISPONIBLE A PARTIR DE MAÑANA!</h2>
-                <p class="info-body">Si necesitás tu pedido para hoy podés
-                    comunicarte al 387 589 213 para chequear disponibilidad</p>
-            </section>
-            <section class="container-categories-one">
-                <div class="container-img-one">
-                    <img class="categories-one-img" src="./img/img-3.png"
-                        alt="img-3.png" />
-                    <h3 class="categories-one-title">Panes</h3>
+               
+                <div class="form-container">
+                    <label class="form-label" for="password">CONTRASEÑA</label>
+                    <input class="form-input-password" type="password" id="password" name="password">
+					<div class="password-icons">
+						<i class="bi bi-eye-slash" id="hide-password"></i>
+						<i class="bi bi-eye" id="show-password" style="display: none;"></i>
+					</div>
+					<a href="#">¿Olvidaste tu contraseña?</a>
                 </div>
-                <div class="container-img-one">
-                    <img class="categories-one-img" src="./img/img-5.png"
-                        alt="img-5.png" />
-                    <h3 class="categories-one-title">Tortas</h3>
-                </div>
-                <div class="container-img-one">
-                    <img class="categories-one-img" src="./img/img-1.png"
-                        alt="img-4.png" />
-                    <h3 class="categories-one-title">Salados</h3>
-                </div>
-            </section>
-            <section class="container-categories-two">
-                <div class="container-img-two">
-                    <img class="categories-two-img" src="./img/img-4.png"
-                        alt="img-4.png" />
-                    <h3 class="categories-two-title">Pre-cocidos</h3>
-                </div>
-                <div class="container-img-two">
-                    <img class="categories-two-img" src="./img/img-7.png"
-                        alt="img-7.png" />
-                    <h3 class="categories-two-title">Dulces</h3>
-                </div>
-            </section>
-            <section class="container-home">
-                <div class="container-home-img">
-                    <img class="home-img" src="./img/img-8.png" alt="img-8.png">
-                </div>
-                <div class="container-home-text">
-                    <h2 class="home-title">PANIFICADOS PATAGONIA</h2>
-                    <p class="home-paragraph">Más de 100 años horneando para
-                        nuestros vecinos en nuestras 9 sucursales.</p>
-                    <a class="home-link" href="#">CONOCENOS</a>
-                </div>
-            </section>
+               <button class="login-btn">INICIAR SESIÓN</button>
+            </form>
         </main>
 
         <footer class="footer">
@@ -156,5 +127,6 @@
                 <a class="copy-right-link" href="#">BOTÓN DE ARREPENTIMIENTO</a>
             </div>
         </footer>
+        <script src="Login.js"></script>
     </body>
 </html>
