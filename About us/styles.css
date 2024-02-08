@@ -109,7 +109,7 @@
     width: 100%;
     padding: 1rem;
     align-items: center;
-    
+
 }
 .container-text p{
     font-size: 16px;
@@ -118,17 +118,6 @@
     margin-bottom: 3rem;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .footer {
     background-color: #EEE;
@@ -148,7 +137,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 .footer-title {
     font-size: 0.875rem;

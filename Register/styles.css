@@ -351,10 +351,6 @@
     margin: 0.5rem 0.3rem;
 }
 
-.copy-right-link:hover {
-    text-decoration: underline;
-}
-
 .footer-email:hover,
 .footer-item-link:hover,
 .copy-right-link:hover {

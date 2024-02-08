@@ -322,7 +322,6 @@
     justify-content: center;
 }
 
-
 .footer-input {
     all: initial;
     border-bottom: 1px solid #393E43;
@@ -330,7 +329,6 @@
     font-family: sans-serif;
     width: 80%;
 }
-
 
 .footer-container-icon {
     width: 20%;
@@ -394,10 +392,6 @@
     color: #434343;
     font-weight: bold;
     margin: 0.5rem 0.3rem;
-}
-
-.copy-right-link:hover {
-    text-decoration: underline;
 }
 
 .footer-email:hover,
