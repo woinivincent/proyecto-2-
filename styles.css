@@ -13,7 +13,8 @@
     z-index: 10;
     background-color: #FFFFFF;
     border-bottom: 1px solid #4343431A;
-    box-shadow: 0px -3px 13px 5px #010b22;
+    box-shadow: 0px -5px 13px 0px #010b22;
+
 }
 
 .nav {
@@ -342,8 +343,6 @@
 .footer-icon {
     color: #FFFFFF;
 }
-
-/*Ajustar*/
 
 .footer-container-icon-social {
     text-decoration: none;

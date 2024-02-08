@@ -1,42 +1,30 @@
+const form = document.querySelector(".form");
+const passwordCurrent = document.querySelector("#password");
+const passwordConfirm = document.querySelector("#repassword");
 
+const passwordVisibility = (element, passwordInput) => {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        element.classList.remove("bi-eye-slash");
+        element.classList.add("bi-eye");
 
-
-    document.getElementById('continueBtn').addEventListener('click', function () {
-        validateForm();
-    });
-
-    function validateForm() {
-        var name = document.getElementById('name').value;
-        var email = document.getElementById('mobile-email').value;
-        var password = document.getElementById('password').value;
-        var rePassword = document.getElementById('re-password').value;
-
-        // Validación  de todos los formularios
-        if (name === "" || email === "" || password === "" || rePassword === "") {
-            alert("Todos los campos son obligatorios");
-            return false;
-        }
-
-        // Validación del formato de correo electrónico
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert("Ingrese un correo electrónico válido");
-            return false;
-        }
-
-        if (password.length < 6) {
-            alert("La contraseña debe tener al menos 6 caracteres");
-            return false;
-        }
-
-        if (password !== rePassword) {
-            alert("Las contraseñas no coinciden");
-            return false;
-        }
-
-        // Si todos los campos son válidos, enviar formulario y redirigir a la home
-     
-       
-        window.location.href = "/index.html";
+    } else {
+        passwordInput.type = "password";
+        element.classList.remove("bi-eye");
+        element.classList.add("bi-eye-slash");
     }
+};
 
+const handleClick = (event) => {
+    const element = event.target;
+
+    if (element.matches(".bi-eye-slash") || element.matches(".bi-eye")) {
+        if (element.dataset.id === "password-current") {
+            passwordVisibility(element, passwordCurrent);
+        } else if (element.dataset.id === "password-confirm") {
+            passwordVisibility(element, passwordConfirm);
+        }
+    }
+};
+
+form.addEventListener("click", handleClick);
