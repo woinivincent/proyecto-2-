@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panificados Patagonia</title>
+    <link rel="icon" href="/images/PANIFICADOS INTEGRALES.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container-icon-list">
+          <i class="icon-list bi bi-list"></i>
+        </div>
+        <div class="social-icons">
+          <i class="bi bi-whatsapp"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <div class="container-logo">
+          <img
+            class="logo"
+            src="/images/PANIFICADOS INTEGRALES.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="user">
+          <div class="user-container-register">
+            <a class="user-account" href="/Register/Register.html"
+              >CREAR CUENTA</a
+            >
+            <a class="user-sesion" href="/Login/Login.html">INICIAR SESIÓN</a>
+          </div>
+          <div class="user-container-cart">
+            <i class="user-cart bi bi-cart2"></i>
+            <div class="container-count">
+              <span class="user-count">37</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="tabs">
+        <ul class="tabs-list">
+          <li class="tabs-list-item">
+            <a class="tabs-item-link" href="/index.html">INICIO</a>
+          </li>
+          <li class="tabs-list-item">
+            <a class="tabs-item-link" href="#">PRODUCTOS</a>
+          </li>
+          <li class="tabs-list-item">
+            <a class="tabs-item-link" href="/Contact/index.html">CONTACTO</a>
+          </li>
+          <li class="tabs-list-item">
+            <a class="tabs-item-link" href="/About us/index.html">NOSOTROS</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="contacto-info">
+        <p><i class="bi bi-envelope-fill"></i>hola@clargentina.com.ar</p>
+        <p><i class="bi bi-instagram"></i>Síguenos en Instagram</p>
+      </div>
+      <div class="formulario">
+        <h2>Contáctanos</h2>
+        <form id="contactForm"  onsubmit="return validateForm()">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="telefono">Teléfono (Opcional):</label>
+          <input type="text" id="telefono" name="telefono" />
+
+          <label for="mensaje">Mensaje(Opcional):</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+          <button type="submit" class="send-btn">
+            ENVIAR
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-links">
+        <div class="footer-nav">
+          <h2 class="footer-title">NAVEGACIÓN</h2>
+          <ul class="footer-nav-list">
+            <li class="footer-item">
+              <a class="footer-item-link" href="#">Inicio</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="#">Productos</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="#">Contacto</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-item-link" href="/About us/index.html"
+                >Nosotros</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2 class="footer-title">CONTACTANOS</h2>
+          <div class="footer-account">
+            <span class="footer-letter">@</span>
+            <a href="#" class="footer-email"
+              >panificadospatagonia@gmail.com.ar</a
+            >
+          </div>
+        </div>
+        <div class="footer-socials-form">
+          <div class="footer-socials">
+            <h2 class="footer-title">REDES SOCIALES</h2>
+            <a href="#" class="footer-container-icon-social">
+              <i class="footer-icon-social bi bi-instagram"></i>
+            </a>
+          </div>
+          <div class="footer-container-form">
+            <h2 class="footer-title">NEWSLETTER</h2>
+            <form class="footer-form">
+              <input class="footer-input" type="text" placeholder="Email" />
+              <button type="submit" class="footer-container-icon">
+                <i class="footer-icon bi bi-send-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right">
+        <p class="copy-right-text-1">
+          COPYRIGHT PANIFICADOS PATAGONIA - 2024. TODOS LOS DERECHOS RESERVADOS.
+        </p>
+        <div class="copy-right-container-text-2">
+          <p class="copy-right-text-2">
+            DEFENSA DE LAS Y LOS CONSUMIDORES. PARA RECLAMOS
+          </p>
+          <a class="copy-right-link" href="#">INGRESÁ ACÁ</a>
+        </div>
+        <a class="copy-right-link" href="#">BOTÓN DE ARREPENTIMIENTO</a>
+      </div>
+    </footer>
+    <script src="/Contact/index.js"></script>
+  </body>
+</html>
