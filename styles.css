@@ -298,6 +298,7 @@
     margin: 0 0.5rem;
     text-decoration: none;
     color: #393E43;
+    font-size: 0.937rem;
 }
 
 .footer-letter {
@@ -395,6 +396,16 @@
     margin: 0.5rem 0.3rem;
 }
 
+.copy-right-link:hover {
+    text-decoration: underline;
+}
+
+.footer-email:hover,
+.footer-item-link:hover,
+.copy-right-link:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     .info-title {
         font-size: 1rem;
@@ -484,8 +495,12 @@
         color: #9E7F54;
     }
 
+    .home-link:hover {
+        opacity: 0.9;
+    }
+
     .tabs-list-item:hover {
-        opacity: .6;
+        opacity: 0.6;
         background-color: transparent;
     }
 
@@ -529,5 +544,13 @@
 
     .footer-icon-social {
         margin: 0;
+    }
+
+    .footer-nav-list {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin: 0.675rem 0;
     }
 }

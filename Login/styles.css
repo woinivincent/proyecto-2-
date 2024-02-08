@@ -167,6 +167,11 @@
     background-color: #9e7f54;
     border: transparent;
     margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
 }
 
 .footer {
@@ -221,6 +226,7 @@
     margin: 0 0.5rem;
     text-decoration: none;
     color: #393e43;
+    font-size: 0.937rem;
 }
 
 .footer-letter {
@@ -315,6 +321,12 @@
     margin: 0.5rem 0.3rem;
 }
 
+.footer-email:hover,
+.footer-item-link:hover,
+.copy-right-link:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
     .logo {
         max-height: 7rem;
@@ -402,6 +414,14 @@
 
     .footer-icon-social {
         margin: 0;
+    }
+
+    .footer-nav-list {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin: 0.675rem 0;
     }
 
     .main {

@@ -91,7 +91,7 @@
 
 .main {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4.3rem;
     padding: 0.9375rem;
     display: flex;
     flex-direction: column;
@@ -100,8 +100,11 @@
 }
 
 .paragraph {
-    font-size: 0.875rem;
+    font-size: 1rem;
     margin: 1.25rem 0;
+    text-wrap: balance;
+    text-align: center;
+    color: #434343;
 }
 
 
@@ -151,6 +154,10 @@
     font-weight: 400;
     font-size: 1.125rem;
     text-align: center;
+}
+
+.input-submit:hover {
+    opacity: 0.9;
 }
 
 .bi-eye::before,
@@ -247,6 +254,7 @@
     margin: 0 0.5rem;
     text-decoration: none;
     color: #393E43;
+    font-size: 0.937rem;
 }
 
 .footer-letter {
@@ -343,6 +351,16 @@
     margin: 0.5rem 0.3rem;
 }
 
+.copy-right-link:hover {
+    text-decoration: underline;
+}
+
+.footer-email:hover,
+.footer-item-link:hover,
+.copy-right-link:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     .main {
         padding: 1rem 13.0625rem;
@@ -430,6 +448,12 @@
 
     .main {
         padding: 1rem 20rem;
+        margin-top: 10.3rem;
+    }
+
+    .paragraph {
+        margin: 1.4375rem 0;
+        font-size: 0.9938rem;
     }
 
     .footer-links {
@@ -440,6 +464,14 @@
 
     .footer-icon-social {
         margin: 0;
+    }
+
+    .footer-nav-list {
+        flex-direction: column;
+    }
+
+    .footer-item {
+        margin: 0.675rem 0;
     }
 }
 
