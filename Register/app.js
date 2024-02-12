@@ -25,6 +25,7 @@ const handleClick = (event) => {
             passwordVisibility(element, passwordConfirm);
         }
     }
+    console.log()
 };
 
 form.addEventListener("click", handleClick);
