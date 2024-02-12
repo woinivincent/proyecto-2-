@@ -538,6 +538,9 @@
     .user-cart {
         font-size: 1.6rem;
     }
+    .user-cart a{
+        text-decoration: none;
+    }
 
     .bi-whatsapp,
     .bi-instagram {

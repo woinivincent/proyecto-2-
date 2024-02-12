@@ -32,7 +32,7 @@
                     <div class="user-container-cart">
                         <i class="user-cart bi bi-cart2"></i>
                         <div class="container-count">
-                            <span class="user-count">37</span>
+                            <span class="user-count">0</span>
                         </div>
                     </div>
                 </div>
@@ -54,11 +54,11 @@
             <section class="container-products">
                 <template id="card-product">
                     <div class="product-card">
-                        <img src="ruta/a/la/imagen-del-producto.jpg"
+                        <img id="img" src="ruta/a/la/imagen-del-producto.jpg"
                             alt="Nombre del producto">
-                        <h3 class="product-name">Nombre del producto</h3>
-                        <p class="product-price">$XX.XX</p>
-                        <button class="add-to-cart-btn">Agregar al carrito</button>
+                        <h3 id="name" class="product-name">Nombre del producto</h3>
+                        <p id="price" class="product-price">$XX.XX</p>
+                        <button id="btn-add-product" class="add-to-cart-btn">Agregar al carrito</button>
                     </div>
                 </template>
             </section>
@@ -120,6 +120,6 @@
                 <a class="copy-right-link" href="#">BOTÓN DE ARREPENTIMIENTO</a>
             </div>
         </footer>
-        <script src="products.js"></script>
+        <script src="products.js" type="module"></script>
     </body>
 </html>

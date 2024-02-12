@@ -453,6 +453,11 @@
     .user-cart {
         font-size: 1.6rem;
     }
+    .user-container-cart a {
+        text-decoration: none;
+        color: #000;
+    }
+
 
     .bi-whatsapp,
     .bi-instagram {
