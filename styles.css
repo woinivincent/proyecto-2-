@@ -126,7 +126,9 @@
     object-fit: cover;
     animation: animate 15s ease-in-out infinite alternate;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 65.5%;
     transform: translateY(-50%);
@@ -136,15 +138,16 @@
     cursor: pointer;
     font-size: 50px;
     color: #535351;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: 10px;
-  }
-  
-  .next {
+}
+
+.next {
     right: 10px;
-  }
+}
+
 .container-categories-one,
 .container-categories-two {
     display: flex;
