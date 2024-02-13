@@ -126,33 +126,25 @@
     object-fit: cover;
     animation: animate 15s ease-in-out infinite alternate;
 }
-
-@keyframes animate {
-
-    0%,
-    25% {
-        transform: translateX(0%);
-        animation-duration: 5s;
-    }
-
-    33%,
-    58% {
-        transform: translateX(-100%);
-        animation-duration: 5s;
-    }
-
-    66%,
-    91% {
-        transform: translateX(-200%);
-        animation-duration: 5s;
-    }
-
-    100% {
-        transform: translateX(-200%);
-        animation-duration: 0s;
-    }
-}
-
+.prev, .next {
+    position: absolute;
+    top: 65.5%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: #535351;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
 .container-categories-one,
 .container-categories-two {
     display: flex;
