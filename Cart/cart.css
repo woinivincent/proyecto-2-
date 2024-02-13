@@ -425,14 +425,6 @@
 }
 
 @media (min-width: 768px) {
-    .info-title {
-        font-size: 1rem;
-    }
-
-    .info-body {
-        font-size: 1rem;
-    }
-
     .main {
         padding: 1.373rem;
     }
@@ -573,45 +565,9 @@
         color: #9E7F54;
     }
 
-    .home-link:hover {
-        opacity: 0.9;
-    }
-
     .tabs-list-item:hover {
         opacity: 0.6;
         background-color: transparent;
-    }
-
-    .container-categories-one,
-    .container-categories-two,
-    .container-home {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0 7.737rem;
-    }
-
-    .container-img-one,
-    .container-img-two {
-        margin: 0.7rem;
-    }
-
-    .container-info {
-        margin: 3.7rem 0;
-    }
-
-    .container-home-img,
-    .container-home-text {
-        margin: 0.7rem;
-        width: 50%;
-    }
-
-    .home-title {
-        font-size: 1.875rem;
-    }
-
-    .home-paragraph {
-        font-size: 1rem;
     }
 
     .footer-links {
