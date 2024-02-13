@@ -72,19 +72,13 @@
     text-align: center;
 }
 
-.user-container-register {
-    display: none;
-}
-
 .logo {
     max-height: 3.3125rem;
     max-width: 100%;
 }
 
-.social-icons {
-    display: none;
-}
-
+.user-container-register,
+.social-icons,
 .tabs {
     display: none;
 }
@@ -106,7 +100,6 @@
     text-align: center;
     color: #434343;
 }
-
 
 .form {
     width: 100%;
@@ -172,7 +165,6 @@
     right: 1rem;
 }
 
-
 .user-login {
     padding: 1.0625rem;
     width: 100%;
@@ -200,7 +192,6 @@
     text-decoration: underline;
 }
 
-
 .footer {
     background-color: #EEE;
     color: #393e43;
@@ -219,7 +210,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 .footer-title {
     font-size: 0.875rem;
@@ -278,7 +268,6 @@
     justify-content: center;
 }
 
-
 .footer-input {
     all: initial;
     border-bottom: 1px solid #393E43;
@@ -286,7 +275,6 @@
     font-family: sans-serif;
     width: 80%;
 }
-
 
 .footer-container-icon {
     width: 20%;
@@ -401,6 +389,11 @@
 
     .user-cart {
         font-size: 1.6rem;
+    }
+
+    .user-container-cart a {
+        text-decoration: none;
+        color: #000;
     }
 
     .bi-whatsapp,

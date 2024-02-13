@@ -1,6 +1,9 @@
 const form = document.querySelector(".form");
 const passwordCurrent = document.querySelector("#password");
 const passwordConfirm = document.querySelector("#repassword");
+const userCount = document.querySelector(".user-count");
+const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
+userCount.textContent = carrito.length;
 
 const passwordVisibility = (element, passwordInput) => {
     if (passwordInput.type === "password") {

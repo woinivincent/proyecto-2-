@@ -43,6 +43,11 @@
     font-size: 1.7rem;
 }
 
+.user-container-cart a {
+    text-decoration: none;
+    color: #000;
+}
+
 .user {
     flex: 1;
     display: flex;
@@ -72,19 +77,13 @@
     text-align: center;
 }
 
-.user-container-register {
-    display: none;
-}
-
 .logo {
     max-height: 3.3125rem;
     max-width: 100%;
 }
 
-.social-icons {
-    display: none;
-}
-
+.user-container-register,
+.social-icons,
 .tabs {
     display: none;
 }
@@ -111,12 +110,10 @@
     text-wrap: balance;
 }
 
-
 .container-slider {
     width: 100%;
     overflow: hidden;
 }
-
 
 .slider {
     width: 300%;
@@ -202,7 +199,6 @@
     opacity: 0.3;
 }
 
-
 .container-home {
     width: 100%;
     display: flex;
@@ -243,7 +239,6 @@
     text-align: center;
 }
 
-
 .footer {
     background-color: #EEE;
     color: #393e43;
@@ -262,7 +257,6 @@
     display: flex;
     flex-direction: column;
 }
-
 
 .footer-title {
     font-size: 0.875rem;
@@ -321,7 +315,6 @@
     justify-content: center;
 }
 
-
 .footer-input {
     all: initial;
     border-bottom: 1px solid #393E43;
@@ -329,7 +322,6 @@
     font-family: sans-serif;
     width: 80%;
 }
-
 
 .footer-container-icon {
     width: 20%;
@@ -387,7 +379,6 @@
     align-items: center;
 }
 
-
 .copy-right-link {
     text-decoration: none;
     color: #434343;
@@ -395,14 +386,102 @@
     margin: 0.5rem 0.3rem;
 }
 
-.copy-right-link:hover {
-    text-decoration: underline;
-}
-
 .footer-email:hover,
 .footer-item-link:hover,
 .copy-right-link:hover {
     text-decoration: underline;
+}
+
+.container-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-name {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product-price {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #9E7F54;
+}
+
+.add-to-cart-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #9E7F54;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #7d6443;
+}
+
+.loader {
+    width: 3rem;
+    height: 3rem;
+    background: #353535;
+    display: flex;
+    margin: 12rem auto;
+    position: relative;
+    animation: rotationBack 1s ease-in-out infinite reverse;
+}
+
+.loader::before {
+    content: '';
+    left: 0;
+    top: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: #2e2e2e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.loader::after {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #9E7F54;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 @media (min-width: 768px) {
@@ -414,7 +493,6 @@
         font-size: 1rem;
     }
 }
-
 
 @media (min-width: 1024px) {
     .logo {
@@ -552,52 +630,4 @@
     .footer-item {
         margin: 0.675rem 0;
     }
-}
-
-
-.container-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.product-card {
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    max-width: 300px;
-    text-align: center;
-}
-
-.product-card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product-name {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-}
-
-.product-price {
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-    color: #9E7F54;
-}
-
-.add-to-cart-btn {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #9E7F54;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.add-to-cart-btn:hover {
-    background-color: #7d6443;
 }

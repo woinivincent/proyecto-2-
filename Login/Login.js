@@ -1,6 +1,10 @@
 const hidePasswordIcon = document.getElementById('hide-password');
 const showPasswordIcon = document.getElementById('show-password');
 const passwordInput = document.getElementById('password');
+const userCount = document.querySelector(".user-count");
+const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
+userCount.textContent = carrito.length;
+
 
 hidePasswordIcon.addEventListener('click', function () {
     passwordInput.setAttribute('type', 'text');
