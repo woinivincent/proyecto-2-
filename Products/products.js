@@ -115,8 +115,7 @@ const agregarCarrito = (event) => {
 
     if (!productoEnCarrito) {
         const producto = productos.find(producto => producto.id === productId);
-        const { id, nameProduct, img, price } = producto;
-        carrito.push({ id, nameProduct, img, price, count: 1 });
+        carrito.push({ ...producto, count: 1 });
         localStorage.setItem("carrito", JSON.stringify(carrito));
         userCount.textContent = carrito.length;
     }

@@ -59,9 +59,14 @@ const incrementProductCount = (element) => {
     const productId = element.dataset.id;
     const index = carrito.findIndex(producto => producto.id === parseInt(productId));
     if (index !== -1) {
-        carrito[index].count++;
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-        mostrarProductos();
+        const producto = carrito[index];
+        if (producto.count < producto.stock) {
+            producto.count++;
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+            mostrarProductos();
+        } else {
+            alert("¡No puedes agregar más de este producto! Stock máximo alcanzado.");
+        }
     }
 };
 
