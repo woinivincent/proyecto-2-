@@ -89,7 +89,7 @@
 }
 
 .main {
-    margin: 4.28rem 0 1.373rem;
+    margin: 4.7rem 0 1.373rem;
     width: 100%;
 }
 
@@ -298,11 +298,13 @@
 .container-products {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .product-card {
     width: 100%;
+    max-width: 20rem;
     margin: 1rem;
     padding: 1rem;
     border: 1px solid #ccc;
@@ -390,6 +392,10 @@
 }
 
 @media (min-width: 768px) {
+    .container-products {
+        justify-content: space-around;
+    }
+
     .product-card {
         width: 45.7%;
         max-width: 23rem;
@@ -403,7 +409,7 @@
     }
 
     .main {
-        margin-top: 11.53rem;
+        margin-top: 11.3rem;
     }
 
     .container-icon-list {
