@@ -6,8 +6,6 @@ const fragment = document.createDocumentFragment();
 const cartItems = [];
 const userCount = document.querySelector(".user-count");
 const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
-userCount.textContent = carrito.length;
-
 
 const mostrarTotal = () => {
     const total = carrito.reduce((acc, current) => {
@@ -23,6 +21,7 @@ const mostrarTotal = () => {
 };
 
 const mostrarProductos = () => {
+    userCount.textContent = carrito.length;
     productsSection.textContent = "";
     productsTotal.textContent = "";
     if (carrito.length !== 0) {

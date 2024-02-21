@@ -6,7 +6,6 @@ const containerPagination = document.querySelector(".pagination-container");
 const fragment = document.createDocumentFragment();
 let productos = [];
 const carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
-userCount.textContent = carrito.length;
 let nextPageUrl = null;
 let prevPageUrl = null;
 
@@ -86,6 +85,7 @@ containerPagination.addEventListener("click", (event) => {
 });
 
 const mostrarProductos = () => {
+    userCount.textContent = carrito.length;
     contenedor.textContent = "";
     if (productos.length !== 0) {
         productos.forEach(producto => {
